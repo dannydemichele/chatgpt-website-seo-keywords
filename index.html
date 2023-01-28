@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>HTML Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Hello User! Please input from the below to create a starting content base.</h1>
+        <form name="frmContact" id="" action="" enctype="multipart/form-data">
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Select a Pre-Created Template:<span id="template-info" class="info"></span>
+                    </div>
+                    
+                    <select name="contact-template" 
+                    class="input-field" id="select">
+                        <option value = "Email NewsLetter" selected>Email NewsLetter</option>
+                        <option value = "Google Text Ad">Google Text Ad</option>
+                        <option value = "Facebook Post">Facebook Post</option>
+                        <option value = "Long-form SEO">Long-form SEO</option>
+                        <option value = "Full Website Content">Full Website Content</option>
+                     </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Company Name <span id="companyName-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-company-name" id="contact-company-name" />
+                </div>
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Audience you are targeting<span id="audience-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-audience" id="contact-audience" />
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Product Name <span id="productName-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-product-name" id="contact-product-name" />
+                </div>
+               
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Tone / Style of article <span id="tone-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-tone" id="contact-tone" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Promo / Highlight <span id="promo-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-promo" id="contact-promo" />
+                </div>
+               
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Appox amount of words you would like <span id="word-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-word" id="contact-word" />
+                </div>
+            </div>
+
+            
+
+        </form>
+        <div class="row" style="    display: flex;
+            justify-content: flex-end;margin-right: 44px;margin-top: 32px;">
+                <button id="button" type="button" onClick="validateContactForm()" name="send" class="btn-submit" value="Send">Create Content -></button>
+        </div>
+
+        <br><br>
+        <div class="label">
+            ChatGPT generated content
+        </div>
+        <div class="row">
+            
+            <textarea class="text-field" rows="10" id="output">
+    
+            </textarea>
+        </div>
+
+    </div>
+
+
+    
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
