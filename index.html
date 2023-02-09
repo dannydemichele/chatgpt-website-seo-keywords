@@ -11,7 +11,7 @@
     <div class="form-container">
         <h1>New GPT Prompt Form</h1>
         <form name="frmContact" id="" action="" enctype="multipart/form-data">
-            <!-- <div class="row">
+            <div class="row">
                 <div class="inline-block right-margin">
                     <div class="label">
                         Select a Pre-Created Template:<span id="template-info" class="info"></span>
@@ -26,7 +26,7 @@
                         <option value = "Full Website Content">Full Website Content</option>
                      </select>
                 </div>
-            </div> -->
+            </div>
             <!-- <div class="row">
                 <div class="inline-block right-margin">
                     <div class="label">
@@ -42,7 +42,7 @@
                 </div>
                
             </div> -->
-            <!-- <div class="row">
+            <div class="row">
                 <div class="inline-block right-margin">
                     <div class="label">
                         Product Name <span id="productName-info" class="info"></span>
@@ -61,4 +61,45 @@
             <div class="row">
                 <div class="inline-block right-margin">
                     <div class="label">
-                        Promo / Highlight <span id
+                        Promo / Highlight <span id="promo-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-promo" id="contact-promo" />
+                </div>
+               
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Appox amount of words you would like <span id="word-info" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="contact-word" id="contact-word" />
+                </div>
+            </div>
+
+            
+
+        </form>
+        <div class="row" style="    display: flex;
+            justify-content: flex-end;margin-right: 44px;margin-top: 32px;">
+                <button id="button" type="button" onClick="validateContactForm()" name="send" class="btn-submit" value="Send">Create Content -></button>
+        </div>
+
+        <br><br>
+        <div class="label">
+            ChatGPT generated content
+        </div>
+        <div class="row">
+            
+            <textarea class="text-field" rows="10" id="output">
+    
+            </textarea>
+        </div>
+
+    </div>
+
+
+    
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
