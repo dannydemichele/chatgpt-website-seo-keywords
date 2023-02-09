@@ -98,26 +98,31 @@ function validateContactForm() {
     };
 
 
-    prompt=`
-        Generate text for ${output} with
-        company name:"""${companyName}"""
-        product name:"""${productName}"""
-        promo:"""${promo}"""
-        target audience:"""${audience}"""
-        tone of article:"""${tone}"""
-        words count:"""${word}"""
+    prompt=
+        `Write email with headings   
+        1. Headline option
+        2. Introduction
+        3. An Offer area
+        4. Closing section 
+        that sells the following product ${productName}.
+
+        In the content also include
+        promo:${promo}, 
+        target audience:${audience},
+        tone of article:,${tone},
+        words count:${word}
     `
 
 
 
-    prompt = JSON.parse(JSON.stringify(productName));
+    prompt = JSON.parse(JSON.stringify(prompt));
 
 
     var data = {
         model: "text-davinci-003",
         prompt: prompt,
         temperature: 0.7,
-        max_tokens: 1300,
+        max_tokens: 2048,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0,
