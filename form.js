@@ -36,35 +36,7 @@ function validateContactForm() {
         $("#contact-company-name").addClass("error-field");
         valid = false;
     }
-    if (productName == "") {
-        $("#productName-info").html("Required.");
-        $("#contact-product-name").css('border', '#e66262 1px solid');
-        $("#contact-product-name").addClass("error-field");
-        valid = false;
-    }
-    if (promo == "") {
-        $("#promo-info").html("Required.");
-        $("#contact-promo").css('border', '#e66262 1px solid');
-        $("#contact-promo").addClass("error-field");
-        valid = false;
-    }
-    if (audience == "") {
-        $("#audience-info").html("Required.");
-        $("#contact-audience").css('border', '#e66262 1px solid');
-        $("#contact-audience").addClass("error-field");
-        valid = false;
-    }
-
-    if (tone == "") {
-        $("#tone-info").html("Required.");
-        $("#contact-tone").css('border', '#e66262 1px solid');
-        $("#contact-tone").addClass("error-field");
-        valid = false;
-    }
-    if ($('input[name="contact-subject"]:checked').length == 0) {
-        $("#subject-info").html("Required.");
-        valid = false;
-    }
+   
     if (word == "") {
         $("#word-info").html("Required.");
         $("#contact-word").css('border', '#e66262 1px solid');
