@@ -105,6 +105,7 @@ promo:${promo},
 target audience:${audience},
 tone of article:${tone}`;
 
+    prompt = JSON.parse(JSON.stringify(prompt));
 
     var data = {
         model: "text-davinci-003",
