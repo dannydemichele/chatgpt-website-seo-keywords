@@ -103,7 +103,7 @@ function validateContactForm() {
 product ${productName},
 promo:${promo}, 
 target audience:${audience},
-tone of article:${tone}`;
+tone of article:${tone}`
 
     prompt = JSON.parse(JSON.stringify(prompt));
 
