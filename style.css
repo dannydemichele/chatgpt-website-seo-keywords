@@ -38,7 +38,8 @@ body {
 
 .text-field2 {
     width: 500px;
-    rows: 10;
+    height: 200px;
+    overflow: auto;
     border-radius: 3px;
     padding: 10px;
     border: #91949d 1px solid;
