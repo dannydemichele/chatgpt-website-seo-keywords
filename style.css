@@ -36,6 +36,16 @@ body {
     margin: 5px 10px 0px 0px;
 }
 
+.text-field2 {
+    width: 500px;
+    rows: 10;
+    border-radius: 3px;
+    padding: 10px;
+    border: #91949d 1px solid;
+    box-sizing: border-box;
+    margin: 5px 10px 0px 0px;
+}
+
 .btn-submit {
     width: 340px;
     padding: 16px 60px;
