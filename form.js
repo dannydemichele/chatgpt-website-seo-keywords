@@ -76,8 +76,8 @@ function validateContactForm() {
 The New Content Needs To Take the Existing content which is in and change it with the information listed here:
 
 New Content:
-1. Please weave the following call to action into the content: ${promo}, 
-2. The target audience to read this is: ${audience},
+1. The company and product name for this company is: ${company}, 
+2. Please weave the following call to action into the content: ${promo}, 
 3. please include some of the following notes: ${tone},
 
 
