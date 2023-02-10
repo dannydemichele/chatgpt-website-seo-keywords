@@ -73,7 +73,7 @@ function validateContactForm() {
     var prompt =
 `Ignore All Previous instructions before this one. You are an expert ${productName}, and you have been assigned a task to rewrite an article in the label Existing Content below. Please the structure, format, style, Tone and length of the article in Existing content section below, which is labeled Existing Content, which was successful for me in past use. You need to take the information from the New Content section and recreate it for a different company and rewrite which I outline in "New Content" section below. So please leave no trace of the previous content, you are only using it as your base structure.
 
-The New Content Needs To Take the Existing content which is in and change it with the information listed here:
+You will need to do your best to remove any references to previous company names and offers, and replace it with the the the content in New Content section below.  
 
 New Content:
 1. The company and product name for this company is: ${company}, 
