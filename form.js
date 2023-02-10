@@ -71,11 +71,19 @@ function validateContactForm() {
 
 
     var prompt =
-`Please ignore all previous instructions. I want you to respond only in language English*. you are to create an SEO keyword strategy for the following keyword ${word} I want you to act as a market research expert that speaks and writes fluent English*. Pretend that you have the most accurate and most detailled information about keyword ${word}, Pretend that you are able to develop a full SEO content plan in fluent English*. From the primary keyword create a markdown table with a keyword list for an SEO content strategy plan on the keyword ${word}. Cluster the keywords according to the top 10 super categories and name the super category in the first column called keyword cluster. Add in another column with 7 subcategories for each keyword cluster or specific long-tail keywords for each of the clusters. List in another column the human searcher intent for the keyword. Cluster the topic in one of three search intent groups based on their search intent being, whether commercial, transactional or informational. Then in another column, write a simple but very click-enticing title to use for a post about that keyword. Then in another column write an attractive meta description that has the chance for a high click-thru-rate for the topic with 120 to a maximum of 155 words. The meta description shall be value based, so mention value of the article and have a simple call to action to cause the searcher to click. Do NOT under any circumstance use too generic keyword like introduction or conclusion. Focus on the most specific keywords only. Do not use single quotes, double quotes or any other enclosing characters in any of the columns you fill in. Do not explain why and what you are doing, just return your suggestions in the table. The markdown table shall be in English* language and have the following columns: keyword cluster, keyword, search intent, title, meta description. 
-${productName},
-promo:${promo}, 
-target audience:${audience},
-tone of article:${tone}`
+`Ignore All Previous instructions before this one. You are an expert ${productName}, and you have been assigned a task to rewrite an article in the label Existing Content below. Please the structure, format, style, Tone and length of the article in Existing content section below, which is labeled Existing Content, which was successful for me in past use. You need to take the information from the New Content section and recreate it for a different company and rewrite which I outline in "New Content" section below. So please leave no trace of the previous content, you are only using it as your base structure.
+
+The New Content Needs To Take the Existing content which is in and change it with the information listed here:
+
+New Content:
+1. Please weave the following call to action into the content: ${promo}, 
+2. The target audience to read this is: ${audience},
+3. please include some of the following notes: ${tone},
+
+
+Existing Content:
+words count:${word}
+`
 
     prompt = JSON.parse(JSON.stringify(prompt));
 
