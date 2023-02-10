@@ -78,7 +78,7 @@ The New Content Needs To Take the Existing content which is in and change it wit
 New Content:
 1. The company and product name for this company is: ${company}, 
 2. Please weave the following call to action into the content: ${promo}, 
-3. please include some of the following notes: ${tone},
+3. Here is some random information on the brand for you to utilize when rethinking the new rewrite: ${tone},
 
 
 Existing Content:
